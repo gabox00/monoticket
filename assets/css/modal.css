@@ -1,0 +1,72 @@
+/* CSS para el modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Posición fija para que se muestre por encima del contenido */
+    z-index: 1; /* Establecer la profundidad de la pila */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #212529;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* CSS para los comentarios */
+
+#comment-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 200px;
+    min-height: 100px;/* Altura fija para el elemento */
+    overflow: auto;
+}
+
+.comment {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px; /* Agregar bordes redondeados */
+}
+
+#comment-text {
+    width: 100%;
+    border-radius: 5px;
+    height: 250px; /* ajustar a la altura deseada */
+    resize: none;
+    background-color: #eeeeee;
+}
+
+#comment-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#comment-form button[type="submit"]:hover {
+    background-color: #0062cc;
+}
+
+.comment .comment-text {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.comment .comment-date {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}

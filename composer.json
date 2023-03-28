@@ -1,0 +1,22 @@
+{
+  "name": "vendor_name/monoticket",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Gabriel",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "ext-mysqli": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MONOTICKET\\Controllers\\": "controllers/",
+      "MONOTICKET\\Models\\": "models/",
+      "MONOTICKET\\Config\\": "config/"
+    }
+  }
+}
